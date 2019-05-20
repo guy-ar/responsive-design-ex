@@ -37,7 +37,12 @@
   nav a {
     text-decoration: none;
   }
-
+  
+  .icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
   header, footer {
     background-color: black;
     color: white;
@@ -47,7 +52,8 @@
   nav {
     margin-bottom: 0.5em;
   }
-
+  
+  
   footer {
     text-align: center;
     margin-top: 1em;
@@ -62,6 +68,35 @@
   float: left;
   padding: 0.3em;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  
+
+  nav > ul > li:hover {
+    background-color: black;
+  }
+/**************************************************/
+
+
+#myMenu.responsive {
+      float: none;
+  }
+  
+  .menu > a:not(:last-child) { 
+    display: none;
+  }
+
+  .icon {
+    display: initial;
+   }
+   #myMenu.responsive > a {
+      display: block;
+      
+  }
+  #myMenu.responsive > a:hover {
+    background-color: gray;
+  }  
 }
 
 @media only screen and (min-width: 768px) {
