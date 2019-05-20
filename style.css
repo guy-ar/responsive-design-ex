@@ -114,14 +114,19 @@
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  
   div.menu {
     display: inline-block;
     float: right;
     
   }
-  nav > a {
+  .menu > a {
+    padding: 0.5em;
+  }
+  nav > .logo {
     display: inline-block;
     float: left;
+    
   }
 
   .icon {
