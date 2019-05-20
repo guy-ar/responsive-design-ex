@@ -51,6 +51,7 @@
   }
   nav {
     margin-bottom: 0.5em;
+    height: 1em;
   }
   
   
@@ -124,14 +125,15 @@
     padding: 0.5em;
   }
   nav > .logo {
-    display: inline-block;
+    display: block;
     float: left;
-    
   }
 
   .icon {
     display: none;
   }
+
+  
 }
 
 
