@@ -51,7 +51,8 @@
   }
   nav {
     margin-bottom: 0.5em;
-    height: 1em;
+    /* height: 1em; */
+    height: auto;
   }
   
   
@@ -83,6 +84,7 @@
 #myMenu.responsive {
       float: none;
   }
+
   
   .menu > a:not(:last-child) { 
     display: none;
