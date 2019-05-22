@@ -12,11 +12,49 @@
     display: table;
   }
 
+  nav::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+
+  nav, footer {
+    background-color: black;
+    color: white;
+    /*padding: 1em;*/
+    
+  }
+   
+  footer {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  /*to ask nir*/
+  /*nav {
+    padding-bottom: 1.5em;
+  }*/
+
+  nav > .logo {
+    display: block;
+    float: left;
+    
+  }
+ 
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+
+  nav a, footer > a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+  }
+
   .project > img , .main-img > img {
     width: 100%;
   }
-  
- 
 
   .project > button {
     color: black;
@@ -27,49 +65,14 @@
     width: 100%;
     margin-top: 0.3em;
   }
+
   .projects > h2 {
     border-bottom: solid 1px lightgray;
     padding-bottom: 0.5em;
     margin-left: 0.2em;
   }
   
-  /*nav > .logo {
-    display: block;*/
-   /* float: left;*/
-  /*  padding: 0.5em;*/
- /* }*/
   
-  nav a {
-    text-decoration: none;
-  }
-  
-  .icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-  }
-  header, footer {
-    background-color: black;
-    color: white;
-    padding: 1em;
-    
-  }
-  nav {
-    margin-bottom: 0.5em;
-    /* height: 1em; */
-    height: auto;
-  }
-  
-  
-  footer {
-    text-align: center;
-    margin-top: 1em;
-  }
-
-  header a , footer > a {
-    color: white;
-  }
-
   /* For mobile phones: */
 [class*="col-"] {
   float: left;
@@ -77,34 +80,43 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  
-
-  nav > ul > li:hover {
-    background-color: black;
-  }
-
-  #myMenu.responsive {
-      float: none;
-  }
-
-  
-  .menu > a:not(:last-child) { 
-    display: none;
-  }
-
-  .icon {
-    display: initial;
-   }
-   #myMenu.responsive > a {
-      display: block;
-      padding: 0.5em;
-      
-  }
-  #myMenu.responsive > a:hover {
-    background-color: gray;
-  }  
+.menu > a:not(:last-child) { 
+  display: none;
 }
+
+.menu.responsive > a:not(:last-child) {
+  float: none;  
+  display: block;  
+}
+
+
+
+.menu {
+  float: none;
+  }
+
+/* not working - talk with Nir */
+/* the div is located at the top although it suppose to be block */
+.responsive {
+  position: relative;
+ 
+}
+
+
+
+.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+
+}
+
+ 
+.responsive > a:hover {
+  background-color: gray;
+}
+
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -123,21 +135,20 @@
   .col-12 {width: 100%;}
   
   div.menu {
-    display: inline-block;
-    float: right;
-    
-  }
-  .menu > a {
-    padding: 0.5em;
-  }
-  nav > .logo {
     display: block;
-    float: left;
+    float: right;
+    margin-top: 0;
     
+  }
+  .menu > a:not(:last-child) { 
+    display: inline-block;
+    /*float: right;*/
+    /*padding: 0.5em;*/
   }
 
-  .icon {
+  .menu a.icon {
     display: none;
+   
   }
 
   
