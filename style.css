@@ -85,7 +85,7 @@
 }
 
 .menu.responsive > a:not(:last-child) {
-  float: none;  
+  /*float: none;*/
   display: block;  
 }
 
@@ -99,7 +99,6 @@
 /* the div is located at the top although it suppose to be block */
 .responsive {
   position: relative;
- 
 }
 
 
